@@ -14,7 +14,9 @@ APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, I
 EIN, NAME
 
 Plotting some of the features versus the target variable (IS_SUCCESSFUL) shows they are evenly distributed across successful and unsuccessful ventures.
-
+![IS_SUCCESSFUL vs ASK_AMT](https://github.com/ajoyg/deep-learning-challenge/blob/main/images/Ask_Amount.jpg)
+![IS_SUCCESSFUL vs AFFILIATION](https://github.com/ajoyg/deep-learning-challenge/blob/main/images/Affiliation.jpg)
+![IS_SUCCESSFUL vs ORGANIZATION](https://github.com/ajoyg/deep-learning-challenge/blob/main/images/Organization.jpg)
 
 #### Compiling, training, and model evaluation
 1. Model training details:
