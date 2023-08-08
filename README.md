@@ -20,17 +20,18 @@ Plotting some of the features versus the target variable (IS_SUCCESSFUL) shows t
 
 #### Compiling, training, and model evaluation
 1. Model training details:
-Model 1: 16 neurons, 2 hidden layers, model accuracy: 72.55%, loss: 55.84%, activation function: relu hidden layers, sigmoid output. Sarted with a simple neural network model with 2 hidden layers to get sense of the model accuracy.
-Model 2: 16 neurons, 3 hidden layers, model accuracy: 73.35%, loss: 57.33%, activation function: sigmoid hidden layers and output. Used keras-tuner and 3 activation functions upto 5 layers to determine the model that yielded the highest accuracy.
-Model 3: 15 neurons, 3 hidden layers, model accuracy: 73.32%, loss: 54.64% activation function: sigmoid hidden layers and output
+Model 1: 16 neurons, 2 hidden layers, model accuracy: 72.55%, loss: 55.84%, activation function: relu hidden layers, sigmoid output. Sarted with a simple neural network model with 2 hidden layers to get sense of the model accuracy. (Please refer to AlphabetSoup.ipynb)
+Model 2: 16 neurons, 3 hidden layers, model accuracy: 73.35%, loss: 57.33%, activation function: sigmoid hidden layers and output. Used keras-tuner and 3 activation functions upto 5 layers to determine the model that yielded the highest accuracy. (Please refer to AlphabetSoupOptimization.ipynb)
+Model 3: 15 neurons, 3 hidden layers, model accuracy: 73.32%, loss: 54.64% activation function: sigmoid hidden layers and output. Please refer to (Please refer to AlphabetSoup_Alt.ipynb) 
 
 2. Model accuracy:
 The goal was to design a neural network model with a 75% accuracy. The best accuracy I was able to achieve was 73.35%.
 
 3. Improving the model performance:
-I started with a simple 2 layer neural network model with relu as the activation function and a sigmoid output layer. Next I used the keras-tuner with tanh, relu, and sigmoid activation functions to evaluate the model with the highest accuracy. I tried dropping the INCOME_AMT column from the features as well since the column had a data on income ranges, dates and it was sparsely populated, however, there was not much of a difference in the model accuracy. I tried a third model with the sigmoid acitvation function across all the layers of the neural network.
+I started with a simple 2 layer neural network model with relu as the activation function and a sigmoid output layer. Next I used the keras-tuner with tanh, relu, and sigmoid activation functions to evaluate the model with the highest accuracy. I tried dropping the INCOME_AMT column from the features as well since the column had a data on income ranges, dates and it was sparsely populated, however, there was not much of a difference in the model accuracy. I tried a third model with the sigmoid activation function across all the layers of the neural network.
 
 #### Summary
 A neural network with 3 hidden layers using a sigmoid activation function yieled a model accuracy of 73.35% closest to the 75% target. to further improve the model accuracy, I recommend the following -
 a. Clean the INCOME_AMT column in the feature table, for example transform the date values in the column to 0s.
 b. Vary the number of neurons and layers with a sigmoid activation function to get to the 75% model accuracy target.
+c. The models are exported in HDF5 files Model1: AlphabetSoupCharity.h5, Model2: AlphabetSoupCharity_Optimization.h5, and Model3: AlphabetSoupCharity_Alt.h5.
