@@ -7,11 +7,15 @@ A non-profit foundation called Alphabet Soup prvides wants to fund applicants, t
 ### Results
 I will examine the results of 3 different optimizations with nueral networks using a binary classification.
 #### Data preprocessing 
-1. Variable in the target for the model: IS_SUCCESSFUL
+1. Variable in the target for the model: IS_SUCCESSFUL (i.e. was the venture successful)
 2. Variables in the features for the model: 
 APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT
 3. Variables removed from the input data becausew they are neither targets not features:
 EIN, NAME
+
+Plotting some of the features versus the target variable (IS_SUCCESSFUL) shows they are evenly distributed across successful and unsuccessful ventures.
+
+
 #### Compiling, training, and model evaluation
 1. Model training details:
 Model 1: 16 neurons, 2 hidden layers, model accuracy: 72.55%, loss: 55.84%, activation function: relu hidden layers, sigmoid output. Sarted with a simple neural network model with 2 hidden layers to get sense of the model accuracy.
