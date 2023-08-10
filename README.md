@@ -32,6 +32,6 @@ I started with a simple 2 layer neural network model with relu as the activation
 
 #### Summary
 A neural network with 3 hidden layers using a sigmoid activation function yieled a model accuracy of 73.35% closest to the 75% target. to further improve the model accuracy, I recommend the following -
-a. Clean the INCOME_AMT column in the feature table, for example transform the date values in the column to 0s.
-b. Vary the number of neurons and layers with a sigmoid activation function to get to the 75% model accuracy target.
-c. The models are exported in HDF5 files Model1: AlphabetSoupCharity.h5, Model2: AlphabetSoupCharity_Optimization.h5, and Model3: AlphabetSoupCharity_Alt.h5.
+1. Clean the INCOME_AMT column in the feature table, for example transform the date values in the column to 0s.
+2. Vary the number of neurons and layers with a sigmoid activation function to get to the 75% model accuracy target.
+3. The models are exported in HDF5 files Model1: AlphabetSoupCharity.h5, Model2: AlphabetSoupCharity_Optimization.h5, and Model3: AlphabetSoupCharity_Alt.h5.
